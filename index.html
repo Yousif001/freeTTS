@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VoiceForge — Text to Speech</title>
+  <title>FreeTTS — Text to Speech</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet" />
   <style>
@@ -301,7 +301,7 @@
   <!-- ── Header ──────────────────────────────────────────────── -->
   <header>
     <div>
-      <div class="logo">Voice<span>Forge</span></div>
+      <div class="logo">Free<span>TTS</span></div>
       <div class="tagline">Browser TTS · No backend · 100% free</div>
     </div>
     <button id="theme-btn" onclick="toggleTheme()">☀ Light</button>
@@ -371,7 +371,7 @@
 
   </div>
 
-  <footer>VoiceForge · Pure client-side · Works offline after first load · <a href="#" style="color:var(--sub)">Host on GitHub Pages / Netlify / Vercel</a></footer>
+  <footer>FreeTTS · Pure client-side · Works offline after first load · <a href="#" style="color:var(--sub)">Host on GitHub Pages / Netlify / Vercel</a></footer>
 
   <!-- ══════════════════════════════════════════════════════════════
        JavaScript — TTS Engine
@@ -640,7 +640,7 @@
         const url  = URL.createObjectURL(blob);
         const a    = document.createElement('a');
         a.href     = url;
-        a.download = 'voiceforge-speech.' + (recorder.mimeType.includes('ogg') ? 'ogg' : 'wav');
+        a.download = 'FreeTTS-speech.' + (recorder.mimeType.includes('ogg') ? 'ogg' : 'wav');
         a.click();
         URL.revokeObjectURL(url);
         setStatus('✓ Downloaded!', '');
